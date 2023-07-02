@@ -1,0 +1,22 @@
+user name daxil edecek ipnuta  onunda valuesi alinacaq
+o daxil olunan inputu value goturecek 
+ve git hubda axtaris edecekhemin adi sehv olsa her sey nul olacaq erro olmasa onda 
+img goturelecek urldan gelen getden qoyulacaq 
+sora takip ve tekib edilen  reporlar datasi da goturlub inner html ile birlikde qoyulacaq 
+naber yerinde yazisi olacaq 
+locationyerine location datasi 
+gmail yerinde gmaili 
+adinin altinda biosu 
+last reporsun adi a nin icinde 
+starlar ve forklar inner html
+recentde ise yazdiqimiz input value elave olunacaq element style di  list sekilinde 
+silme knopkasi ise butun recenetdekileri silmek ucundu 
+
+
+scriptde search olacaq bide clear all
+
+ui de butun githubdan alinan melumatlar qoyulacar 
+
+storage ise butun alinmis melumatlar yerlesecek 
+
+githubda inpit value esasen butun info getirilecek 
