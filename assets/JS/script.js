@@ -12,23 +12,27 @@ let repoStar = document.getElementById("repoStar");
 let repoFork = document.getElementById("repoFork");
 let gitusername = document.getElementById("githubname");
 let search = document.getElementById("search");
-search.addEventListener("click" , getuser , true);
-function getuser(){
-    if(gitusername.value == ""){
+let lastuser = document.getElementById("last-users");
+let clearlastusers = document.getElementById("clear-last-users");
+
+search.addEventListener("click", getuser, true);
+
+clearlastusers.addEventListener("click", clearAll, true);
+
+function getuser() {
+    if (gitusername.value == "") {
         alert("zehmet olmasa heqqeten var olan user adi daxil edin");
     }
-    else{
-        let githubget  = new GithubApi(gitusername.value);
+    else {
+        let githubget = new GithubApi(gitusername.value);
         githubget.get();
         recentelement(gitusername.value);
-        const myTimeout = setTimeout(localStorage_Github , 3000);
+        const myTimeout = setTimeout(localStorage_Github, 3000);
     }
     return gitusername.value = "";
 }
-let lastuser = document.getElementById("last-users");
-let clearlastusers = document.getElementById("clear-last-users"); 
-clearlastusers.addEventListener( "click" , clearAll , true );
-function clearAll(){
+
+function clearAll() {
     while (lastuser.firstElementChild !== null) {
         lastuser.firstElementChild.remove();
     }
